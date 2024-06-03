@@ -5,8 +5,16 @@ body{
 #container{
     margin: auto;
     border: 2px solid black;
-    width:544px;
-    height:544px;
+    width:541px;
+    height:541px;
+}
+
+.grid-row{
     display:flex;
-    flex-direction:row;
+}
+
+.grid-box{
+    width:32px;
+    height:32px;
+    border:1px solid red;
 }
