@@ -23,11 +23,24 @@ function createContainerGrid(numberOfBoxes){
         }    
     }
 
-    createContainerGrid(16);
+    
 
 
     function numberofSuqares(){
-        let numberofSuqares= prompt
-        ("Enter number of squares from 16 to 100");
-        console.log(numberofSuqares);
+        /*control if the container has divs inside and remove them */
+        while(container.firstChild){
+             container.removeChild(container.lastChild);
+        }
+     
+        let numberofSuqares= prompt("Enter number of squares <100");
+
+        if(numberofSuqares>100) {
+            numberofSuqares= prompt("Enter number of squares <100");
+        }
+        createContainerGrid(numberofSuqares);
     }
+
+    createContainerGrid(16);
+
+
+        
