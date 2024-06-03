@@ -12,16 +12,34 @@ function createContainerGrid(numberOfBoxes){
 
         const gridBox=document.createElement("div");
         gridBox.className="grid_box";
-        gridBox.setAttribute("style", "flex-grow: 1;border: 2px solid black;");
+        gridBox.setAttribute("style", "flex-grow: 1;");
         gridRow.appendChild(gridBox);
 
         gridBox.addEventListener("mouseover", ()=> {
-            gridBox.style.backgroundColor = 'blue'; });
+            gridBox.style.backgroundColor = randomRgbColor();
+        
+        });
         }
 
         container.appendChild(gridRow);
         }    
     }
+    
+    /*generate a random intager from 0 to 255 */
+    function randomInt(){
+        let randomInt=Math.floor(Math.random()*(255+ 1));
+        return randomInt;
+    }
+    
+    /* set the random integer as rgb values */
+    function randomRgbColor() {
+        let r = randomInt();
+        let g = randomInt();
+        let b = randomInt();
+        let result= "rgb("+r+","+g+","+b+")";
+        return result;
+    }
+    
 
     
 

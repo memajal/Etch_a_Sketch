@@ -10,3 +10,11 @@ body{
     display: flex;
     flex-direction: column;
 }
+
+#set_number_of_squares{
+    margin-top:30px;
+    margin-bottom: 30px;
+    border: 2px solid blau;
+    padding:10px;
+    background-color: aquamarine;
+}
