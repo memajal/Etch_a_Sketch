@@ -31,6 +31,12 @@ function createContainerGrid(){
         });
     }
 
+    function numberofSuqares(){
+        let numberofSuqares= prompt
+        ("Enter number of squares from 16 to 100");
+        console.log(numberofSuqares);
+    }
+
 
 
 onMouseOverEffect();
