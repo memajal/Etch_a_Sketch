@@ -5,8 +5,8 @@ body{
 #container{
     margin: auto;
     border: 2px solid black;
-    width:700px;
-    height:700px;
+    width:500px;
+    height:500px;
     display: flex;
     flex-direction: column;
 }
@@ -14,7 +14,7 @@ body{
 #set_number_of_squares{
     margin-top:30px;
     margin-bottom: 30px;
-    border: 2px solid blau;
+    border: 2px solid blue;
     padding:10px;
     background-color: aquamarine;
 }
