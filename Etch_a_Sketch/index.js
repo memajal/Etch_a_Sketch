@@ -44,21 +44,25 @@ function createContainerGrid(numberOfBoxes){
     
 
 
-    function numberofSuqares(){
-        /*control if the container has divs inside and remove them */
-        while(container.firstChild){
-             container.removeChild(container.lastChild);
-        }
-     
-        let numberofSuqares= prompt("Enter number of squares <100");
+function numberofSuqares() {
 
-        if(numberofSuqares>100) {
-            numberofSuqares= prompt("Enter number of squares <100");
-        }
-        createContainerGrid(numberofSuqares);
+    /*control if the container has divs inside and remove them */
+    while (container.firstChild) {
+        container.removeChild(container.lastChild);
+    }
+
+       let numberofSuqares = prompt("Enter number of squares <100");
+
+    if (numberofSuqares > 100) {
+        window.alert("Error! Number of Squares >100! Try Again!")
+     
+       }
+
+       else {
+          createContainerGrid(numberofSuqares);
+       } 
+
+        
     }
 
     createContainerGrid(16);
-
-
-        
